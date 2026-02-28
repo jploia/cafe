@@ -7,12 +7,14 @@ export default function Home() {
       <nav className="flex justify-center sticky underline underline-offset-1">
         *café
       </nav>
-      <main className="flex flex-wrap justify-center">
-        <Image
-          src={blob}
-          alt="CAFE"
-          />
-        <h1>&#91; understanding how to navigate and identify strokes &#93;</h1>
+      <main className="flex flex-wrap justify-center mt-[20px] m-[64px]">
+        <div>
+          <Image
+            src={blob}
+            alt="CAFE"
+            />
+          <h1 className="text-center">&#91; understanding how to navigate and identify strokes &#93;</h1>
+        </div>
       </main>
 
     </div>
