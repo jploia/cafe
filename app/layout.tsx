@@ -8,6 +8,11 @@ const coolvetica = localFont({
   src: "../public/fonts/CoolveticaRg.otf"
 });
 
+const malevice = localFont({
+  variable: "--font-malevice",
+  src: "../public/fonts/MaleviceInkbleed.extra-bold.otf"
+});
+
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
