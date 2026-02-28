@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #CC2324;
+  --foreground: #FFE9CC;
 }
+
+/* import fonts */
+/* @font-face {
+  font-family: 'CoolvecticaRg';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../public/fonts/CoolveticaRg.otf');
+} */
 
 @theme inline {
   --color-background: var(--background);
@@ -14,8 +24,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #CC2324;
+    --foreground: #FFE9CC;
   }
 }
 
