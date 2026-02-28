@@ -6,6 +6,9 @@ export default function Home() {
       <nav className="flex justify-center sticky underline underline-offset-1">
         *café
       </nav>
+      <main className="flex justify-center">
+        <h1>&#91; understanding how to navigate and identify strokes &#93;</h1>
+      </main>
 
     </div>
     // <div className="flex min-h-screen items-center justify-center">
