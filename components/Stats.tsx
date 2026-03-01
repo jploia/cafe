@@ -11,7 +11,7 @@ export default function Stats(){
             whileInView={{opacity: 1, x:0, y:0, rotate:0}}
             transition={{duration:1.2, delay:.1}}
             viewport={{once:true}}>
-                <div id="stats" className="flex mt-[15rem] w-[50%] ml-[45%]">
+                <div id="stats" className="flex mt-[20rem] w-[50%] ml-[45%]">
                 <h1 className="text-right text-[64px] leading-none"><span className="text-(--pink)">Strokes are the</span> LEADING <span className="text-(--pink)">cause of death for Americans.</span></h1>
                 </div>
             </motion.h2>
