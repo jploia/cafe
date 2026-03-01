@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence, easeIn } from 'framer-motion';
 
 import Image from "next/image";
 import down from "../public/down.svg"
@@ -53,18 +54,28 @@ export default function Home() {
       <Socio />
       <Impact />
       <Call />
-      {showArrow && (
-      <div id='down' className="fixed items-center justify-center flex-col bottom-4 left-1/2 drop-shadow-lg">
-        <div className="bg-(--foreground) outline-1 outline-(--background) rounded-full">
-          <Image
-            src={down}
-            alt="Down Arrow Icon"
-            className="p-[2px]"
-            />
-        </div>
-      </div>
-      )
-      }
+      
+      <AnimatePresence>
+        {showArrow && (
+        <motion.div
+          id='down'
+          className="fixed items-center justify-center flex-col bottom-4 left-1/2 drop-shadow-lg"
+          initial={{ opacity: 0, y:50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ ease: "easeIn", duration: 0.4 }}
+        >
+          <div className="bg-(--foreground) outline-1 outline-(--background) rounded-full">
+            <Image
+              src={down}
+              alt="Down Arrow Icon"
+              className="p-[2px]"
+              />
+          </div>
+        </motion.div>
+        )
+        }
+      </AnimatePresence>
     </>
     // <div className="flex min-h-screen items-center justify-center">
     //   <nav className="flex justify-center">
