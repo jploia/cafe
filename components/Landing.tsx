@@ -1,13 +1,26 @@
+'use client';
+
 import Image from "next/image";
 import blob from "../public/blobCafe.svg"
 import cafe from "../public/cafe.svg"
 
+import { motion } from 'framer-motion';
+
 export default function Landing() {
   return (
     <>
-      <nav className="text-center fixed underline-offset-1 bg-linear-to-bl from-(--background) to-(--background/0) w-full backdrop-blur-sm">
-        *café
-      </nav>
+      {/* <a href="#hero">
+        <nav className="text-center fixed underline-offset-1 bg-linear-to-bl from-(--background) to-(--background/0) w-full backdrop-blur-sm">
+          *café
+        </nav>
+      </a> */}
+      <a href="#hero">
+        <motion.button
+          whileHover={{scale: 1.2}}
+          className="text-center fixed underline-offset-1 bg-linear-to-bl from-(--background) to-(--background/0) w-full backdrop-blur-sm">
+            *café
+        </motion.button>
+      </a>
       <main className="">
         <div id="hero" className="flex flex-wrap items-center justify-center flex-col">
           <Image
