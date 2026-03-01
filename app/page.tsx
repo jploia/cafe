@@ -2,7 +2,6 @@ import Image from "next/image";
 import blob from "../public/blobCafe.svg"
 import cafe from "../public/cafe.svg"
 import down from "../public/down.svg"
-// import React, { useState } from "react";
 
 export default function Home() {
   return (
