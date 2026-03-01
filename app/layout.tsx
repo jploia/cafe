@@ -25,7 +25,7 @@ const malevice = localFont({
 
 export const metadata: Metadata = {
   title: "café",
-  description: "Centralizing Actions For Everyone - Stroke Detection",
+  description: "Centralizing Actions For Everyone - Stroke Prevention",
 };
 
 export default function RootLayout({
