@@ -26,6 +26,8 @@ export default function Home() {
     const handleScroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.scrollHeight-1) {
       setShowArrow(false);
+    } else {
+      setShowArrow(true);
     }
   };
 
