@@ -11,6 +11,7 @@
   --color-foreground: var(--foreground);
   /* --font-sans: var(--font-geist-sans); */
   --font-sans: var(--font-coolvetica);
+  --color-cyan-400: #24FFFF;
   /* --font-mono: var(--font-geist-mono); */
 }
 
@@ -22,7 +23,6 @@ body {
 
 h1 {
   font-size: 48px;
-  line-height: 4;
 }
  
 @media (max-width: 768px){
