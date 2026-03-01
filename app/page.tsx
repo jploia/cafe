@@ -1,40 +1,46 @@
 import Image from "next/image";
-import blob from "../public/blobCafe.svg"
-import cafe from "../public/cafe.svg"
 import down from "../public/down.svg"
+import Landing from "@/components/Landing"
+import Stats from "@/components/Stats"
+import Try from "@/components/Try"
+import F from "@/components/F"
+import A from "@/components/A"
+import S from "@/components/S"
+import T from "@/components/T"
+import Fast from "@/components/Fast"
+import Memory from "@/components/Memory"
+import Socio from "@/components/Socio"
+import Impact from "@/components/Impact"
+import Call from "@/components/Call"
+
 // import React, { useState } from "react";
 
 export default function Home() {
   return (
-    <div>
-      <nav className="flex justify-center sticky underline underline-offset-1 bg-background">
-        *café
-      </nav>
-      <main className="flex justify-center">
-        <div className="flex flex-wrap items-center justify-center mt-[20px]">
+    <>
+      <Landing />
+      <Stats />
+      <Try />
+      <F />
+      <A />
+      <S />
+      <T />
+      <Fast />
+      <Memory />
+      <Socio />
+      <Impact />
+      <Call />
+      <footer className="fixed items-center justify-center flex-col bottom-4 left-1/2 drop-shadow-lg">
+        <div className="bg-(--foreground) outline-1 outline-(--background) rounded-full">
           <Image
-            src={blob}
-            alt="CAFE"
-            className="mt-[5rem]"
-            />
-          <h1 className="text-center text-cyan-400 absolute top-1/2 mix-blend-difference">&#91; understanding how to navigate and identify strokes &#93;</h1>
-        </div>
-        <div>
-          <Image
-            src={cafe}
-            alt="CAFE"
+            src={down}
+            alt="Down Arrow Icon"
+            className="p-[2px]"
             />
         </div>
-      </main>
-      <footer className="absolute items-center justify-center flex-col bottom-4 left-1/2">
-        <Image
-          src={down}
-          alt="Down Arrow Icon"
-          className="mt-[2rem]"
-          />
-        </footer>
+      </footer>
 
-    </div>
+    </>
     // <div className="flex min-h-screen items-center justify-center">
     //   <nav className="flex justify-center">
     //     <h1>*cafe</h1>

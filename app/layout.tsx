@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={coolvetica.variable}
+        className={`${coolvetica.variable} ${malevice.variable}`}
       >
         {children}
       </body>

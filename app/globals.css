@@ -4,6 +4,7 @@
 :root {
   --background: #CC2324;
   --foreground: #FFE9CC;
+  --pink: #FF8E8E;
 }
 
 @theme inline {
@@ -11,8 +12,8 @@
   --color-foreground: var(--foreground);
   /* --font-sans: var(--font-geist-sans); */
   --font-sans: var(--font-coolvetica);
-  --color-cyan-400: #24FFFF;
-  /* --font-mono: var(--font-geist-mono); */
+  --font-serif: var(--font-malevice);
+  /* --font-family-malevice: "malevice"; */
 }
 
 body {
@@ -22,13 +23,21 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  line-height: 1;
+  font-family: var(--font-malevice);
 }
+
+/* p {
+  font-family: var(--);
+} */
+
+/* p {
+  font-size: 24px;
+} */
  
 @media (max-width: 768px){
   h1 {
     margin-top: 1rem;
     font-size: 20px;
-    line-height: 1;
   }
 }
