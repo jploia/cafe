@@ -1,3 +1,9 @@
+'use client';
+
+import Image from 'next/image'
+import mugBrain from "../public/mugBrain.png"
+import { motion } from 'framer-motion'
+
 export default function Call(){
     return(
         <>
@@ -8,12 +14,20 @@ export default function Call(){
                 <p className="text-(--pink) text-[12px]">--- the World Stroke Organization-Lancet Neurology Commission</p>
                 <p className="mt-16 text-center font-serif text-(--pink)">by directly asking you to think about what songs, dances, and jokes are relevant to you or your loved one, you can find symptoms in a way that is culturally relevant</p>
             </div>
-            <div className="flex flex-col justify-center items-center mt-[8rem]">
-                <div className="bg-[blue] w-[400px] h-[300px]">
-                    pic here
-                </div>
+            <a target="_blank" href="https://dfamerica.org/memory-cafe-directory/">
+            <motion.div className="flex flex-col cursor-pointer justify-center items-center mt-[8rem]"
+                whileHover={{scale: 1.05, rotate: 5}}
+                >
+                <Image
+                    src={mugBrain}
+                    width={300}
+                    height={300}
+                    alt="Cup of coffee"
+                    className=""
+                />
                 <p className="mt-2">--- find a memory cafe!</p>
-            </div>
+            </motion.div>
+            </a>
         </div>
         <p className="text-(--pink) text-center mb-2"> - this website is red for the color of stroke awareness &#60;3 </p>
         </>

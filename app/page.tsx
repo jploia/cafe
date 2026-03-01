@@ -42,18 +42,77 @@ export default function Home() {
   
   return (
     <>
-      <Landing />
+    <div className="overflow-hidden">
+        <Landing />
+
       <Stats />
-      <Try />
-      <F />
-      <A />
-      <S />
-      <T />
-      <Fast />
+
+      <motion.h1
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:0.5, delay: 1}}
+        viewport={{once:true}}>
+        <Try />
+      </motion.h1>
+      
+
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:1, delay:1.6}}
+        viewport={{once:true}}>
+        <F />
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:1, delay:1.6}}
+        viewport={{once:true}}>
+        <A />
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:1, delay:1.6}}
+        viewport={{once:true}}>
+        <S />
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:1, delay:1.6}}
+        viewport={{once:true}}>
+        <T />
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:1, delay:1.5}}
+        viewport={{once:true}}>
+        <Fast />
+      </motion.div>
       <Memory />
-      <Socio />
-      <Impact />
-      <Call />
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:1, delay:.5}}
+        viewport={{once:true}}>
+        <Socio />
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:1, delay:.5}}
+        viewport={{once:true}}>
+        <Impact />
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration:1, delay:2.5}}
+        viewport={{once:true}}>
+        <Call />
+      </motion.div>
       
       <AnimatePresence>
         {showArrow && (
@@ -76,6 +135,7 @@ export default function Home() {
         )
         }
       </AnimatePresence>
+    </div>
     </>
     // <div className="flex min-h-screen items-center justify-center">
     //   <nav className="flex justify-center">

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import blob from "../public/blobCafe.svg"
 import cafe from "../public/cafe.svg"
+import leia from "../public/leia.png"
+import mug from "../public/mug.png"
 
 import { motion } from 'framer-motion';
 
@@ -14,10 +16,15 @@ export default function Landing() {
           *café
         </nav>
       </a> */}
+      <motion.h2
+        initial={{opacity: 0, y: 20, rotate: 2}}
+        whileInView={{opacity: 1, y:0, rotate: 0}}
+        transition={{duration:0.8}}
+        viewport={{once:true}}>
       <a href="#hero">
         <motion.button
           whileHover={{scale: 1.2}}
-          className="text-center fixed underline-offset-1 bg-linear-to-bl from-(--background) to-(--background/0) w-full backdrop-blur-sm">
+          className="z-10 text-center fixed underline-offset-1 bg-linear-to-bl from-(--background) to-(--background/0) w-full backdrop-blur-sm pt-1">
             *café
         </motion.button>
       </a>
@@ -30,8 +37,29 @@ export default function Landing() {
             />
           <p className="text-center mt-[2rem] ">&#91; <span className="text-(--pink)">c</span> = centralizing, <span className="text-(--pink)">a</span> = actions, <span className="text-(--pink)">f</span> = for, <span className="text-(--pink)">é</span> = everyone &#93;</p>
           <p className="text-(--pink) text-center">the ability to receive proper care for strokes is a privilege many can not afford --- we bridge this gap through education.</p>
+          <Image
+            src={leia}
+            alt="Black woman with right drooped face"
+            width={200}
+            height={200}
+            className="absolute top-8 right-8"
+            />
         </div>
       </main>
+        </motion.h2>
+        <motion.div
+          initial={{opacity:0}}
+          whileInView={{opacity:1}}
+          transition={{duration:0.8}}
+          viewport={{once:true}}>
+          <Image
+            src={mug}
+            alt="A mug of coffee"
+            width={200}
+            height={200}
+            className="absolute bottom-0 left-0"
+            />
+        </motion.div>
     </>
   )
 }
