@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Navbar from "@/components/Navbar"
 import blob from "../public/blobCafe.svg"
 import cafe from "../public/cafe.svg"
 import leia from "../public/leia.png"
@@ -11,23 +12,12 @@ import { motion } from 'framer-motion';
 export default function Landing() {
   return (
     <>
-      {/* <a href="#hero">
-        <nav className="text-center fixed underline-offset-1 bg-linear-to-bl from-(--background) to-(--background/0) w-full backdrop-blur-sm">
-          *café
-        </nav>
-      </a> */}
+      <Navbar />
       <motion.h2
         initial={{opacity: 0, y: 20, rotate: 2}}
         whileInView={{opacity: 1, y:0, rotate: 0}}
         transition={{duration:0.8}}
         viewport={{once:true}}>
-      <a href="#hero">
-        <motion.button
-          whileHover={{scale: 1.2}}
-          className="z-10 text-center fixed underline-offset-1 bg-linear-to-bl from-(--background) to-(--background/0) w-full backdrop-blur-sm pt-1">
-            *café
-        </motion.button>
-      </a>
       <main className="">
         <div id="hero" className="flex flex-wrap items-center justify-center flex-col">
           <Image
@@ -57,7 +47,7 @@ export default function Landing() {
             alt="A mug of coffee"
             width={200}
             height={200}
-            className="absolute bottom-0 left-0"
+            className="absolute md:bottom-0 md:left-0"
             />
         </motion.div>
     </>
