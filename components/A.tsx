@@ -16,7 +16,7 @@ export default function A(){
                 <p className="text-(--pink) pb-8">watch the arms &#40;〜^∇^&#41;〜</p>
                 <p className="text-(--foreground)">did their arms show any weakness? one weaker than another?</p>
             </div>
-            <div className="mt-16 flex gap-64">
+            <div className="mt-16 flex">
             
             <motion.div
                 whileHover={{rotate:-5}}>

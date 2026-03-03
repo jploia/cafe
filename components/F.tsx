@@ -16,7 +16,7 @@ export default function F(){
                 <p className="text-(--pink) pb-8">watch the smile :&#41;</p>
                 <p className="text-(--foreground)">was your loved one’s smile uneven and/or did their face move not as well as other?</p>
             </div>
-            <div className="mt-16 flex gap-24">
+            <div className="mt-16 flex">
 
             <motion.div
                 whileHover={{rotate:-5}}>
