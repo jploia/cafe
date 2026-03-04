@@ -11,7 +11,7 @@ export default function Navbar() {
         <a href="#hero">
             <motion.button
             whileHover={{scale: 1.2}}
-            className="z-10 text-center fixed inset-x-0 mx-auto underline underline-offset-1 bg-linear-to-bl from-(--background) to-(--background/0) backdrop-blur-sm pt-1">
+            className="grain-md z-10 text-center fixed inset-x-0 mx-auto underline underline-offset-1 bg-blur bg-linear-to-bl from-(--background) to-(--background/0) p-blur-md pt-1">
                 *café
             </motion.button>
         </a>

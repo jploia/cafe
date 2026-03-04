@@ -1,10 +1,11 @@
 @import "tailwindcss";
+@plugin "tailwindcss-noise";
 
 
 :root {
-  --background: #CC2324;
-  --foreground: #FFE9CC;
-  --pink: #FF8E8E;
+  --background: #bc3127;
+  --foreground: #ffe2ad;
+  --pink: #ff8570;
 }
 
 @theme inline {
