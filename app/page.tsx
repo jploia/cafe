@@ -40,10 +40,11 @@ export default function Home() {
   };
 },[]);
   
+  // TODO: remove manually set spacing and use gap to set even section sep
   return (
     <>
-    <div className="overflow-hidden">
-        <Landing />
+    <div className="flex flex-col overflow-hidden noise-medium gap-[24vw] p-[0 1rem 1rem 1rem] md:p-[0 2rem 2rem 2rem]">
+      <Landing />
 
       <Stats />
 

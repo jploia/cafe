@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function S(){
     return(
         <>
-        <div className="flex justify-center flex-col items-center my-[5rem]">
+        <div className="flex justify-center flex-col items-center">
             <h1 className="font-serif text-[64px] mb-8">&#91; s = slurred speech &#93;</h1>
             <div className="text-center text-[20px]">
                 <p className="text-(--pink) pb-8">play your or your loved one’s favorite song</p>

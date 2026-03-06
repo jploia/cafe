@@ -33,7 +33,7 @@ export default function Call(){
                     </motion.div>
                 </a>
             </div>
-            <p className="text-(--pink) leading-none text-center mb-2"> - this website is red for the color of stroke awareness &#60;3 </p>
+            <p className="text-(--pink) leading-none text-center"> - this website is red for the color of stroke awareness &#60;3 </p>
         </div>
         </>
     )

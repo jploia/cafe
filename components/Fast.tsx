@@ -1,7 +1,7 @@
 export default function Fast(){
     return(
         <>
-        <div className="flex flex-col items-center my-[20rem]">
+        <div className="flex flex-col items-center">
             <div className="flex flex-col items-center">
                 <h1 className="font-serif text-[64px] mb-8 md:mb-16 text-center">&#91; FAST helps identify strokes &#93;</h1>
             </div>

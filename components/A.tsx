@@ -9,7 +9,7 @@ import flowers from "../public/flowers.png"
 export default function A(){
     return(
         <>
-        <div className="flex justify-center flex-col items-center my-[8rem]">
+        <div className="flex justify-center flex-col items-center">
             <h1 className="font-serif text-[64px] mb-8">&#91; a = arm weakness &#93;</h1>
             <div className="text-center text-[20px]">
                 <p className="text-(--pink) pb-8">do your favorite dance together</p>

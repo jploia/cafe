@@ -12,6 +12,7 @@ import { motion } from 'framer-motion';
 export default function Landing() {
   return (
     <>
+      <div>
       <Navbar />
       <motion.h2
         initial={{opacity: 0, y: 20, rotate: 2}}
@@ -50,6 +51,7 @@ export default function Landing() {
             className="absolute md:bottom-0 md:left-0"
             />
         </motion.div>
+      </div>
     </>
   )
 }
